@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch案例</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <pre>
+    <script>
+        var n=2000, y=12 ,r=31,k=0
+        // 年       月    日    天数初始值
+        switch(y){
+          // 用switch穿透属性从符合条件的月份开始进行天数累加
+            case 12:k+=30
+            case 11:k+=31
+            case 10:k+=30
+            case 9:k+=31
+            case 8:k+=31
+            case 7:k+=30
+            case 6:k+=31
+            case 5:k+=30
+            case 4:k+=31
+            case 3:
+                 if(n%4===0&&n%100!==0||n%400===0){k+=29}
+                 else{k+=28}
+                //  如果年份时闰年2月的天数计29天,否则28天
+            case 2:k+=31
+            // 月份是2时,累加一月天数,同时向下穿透累加r的值
+            case 1:k+=r
+            // 月份是1时,初始值+r的值
+        document.write(n+'年'+y+'月'+r+'日是当年的第'+k+'天')
+
+        }
+        
+        
+        
+        // if(n%4===0&&n%100!==0||n%400===0){e+=1}
+    </script>
+</pre>
+  </body>
+</html>

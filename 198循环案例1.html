@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>循环案例1</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+
+    <script>
+      for (n = 0; n <= 5; n++) {
+        for (k = 0; k <= 8; k++) {
+          document.write(" *");
+        }
+        // 在浏览器文档流中,循环输出9个*,然后输出一个换行标签
+        document.write("<br/>");
+      }
+    </script>
+    <hr />
+    <script>
+      // 九九乘法表
+      for (a = 1; a <= 9; a++) {
+        // document.write(a);
+        //  用a变量的自增,控制子循环的循环范围,即k变量的自增范围
+        for (k = 1; k <= a; k++) {
+          document.write(k + "*" + a + "=" + a * k + "   |");
+        }
+        document.write("<br/>");
+      }
+    </script>
+  </body>
+</html>

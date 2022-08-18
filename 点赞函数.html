@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="dzs" onclick="dianzan()">0</button>
+    <script>
+      function dianzan() {
+        let dianzanshubiaoqian = window.document.getElementById("dzs");
+        // 点赞标签              <赋值             <通过id获取目标元素的文本
+        let dianzanshu = parseInt(dianzanshubiaoqian.innerText);
+        // 点赞数      <赋值 将点赞标签的元素文本转换成数值类型数据
+        let xinshuzhi = dianzanshu + 1;
+        // 新数值     <赋值   点赞数+1
+        dianzanshubiaoqian.innerText = xinshuzhi;
+        // 点赞数标签文本元素        <赋值  <新数值
+        return;
+        // 返还
+      }
+    </script>
+  </body>
+</html>

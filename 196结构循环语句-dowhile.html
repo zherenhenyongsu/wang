@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>结构循环-do while</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <>
+        while先判断后执行,do while先执行后判断
+        <p>1.当初始值在条件以外时,while语句不会执行代码,但do while 会执行一次</p>
+        <p>2.当初始值在条件以内时,两者一样</p>
+        <p></p>
+    <script>
+        var k=10
+        do{
+          // 执行
+            document.write(k)
+            k++
+            // k自增
+        }while(k<3)
+        // 判断是否符合循环条件,否,执行后续
+        document.write(k)
+    </script>
+    <p>!!!!!!!下面代码不要用show preview打开,vs会卡死,可以用live server看效果 </p>
+    <!-- <script>
+        // prompt浏览器弹出提示框,框内输入的值会赋值给k
+        do{
+            var k=prompt('你爱不爱我')
+        }while(k!=='yes')
+
+    </script> -->
+    prompt(‘提示文本内容’)
+1.表现形式: 一个弹出层, 一个文本框, 一个取消按钮, 一个确定按钮
+2.返回值:​你点击的是取消按钮, 返回值是 null(不管写不写内容都是 null)
+3.​你点击的是确定按钮, 返回值是 文本框内 输入的内容(不管你写什么, 都是字符串类型)
+
+</>
+  </body>
+</html>

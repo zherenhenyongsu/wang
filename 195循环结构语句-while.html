@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>循环结构语句-while</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <>1.while会 重复 的执行一段代码,直到重复的 结束 才会执行后续代码</>
+    <p>2.while循环中的 k++ 一定要写,否则循环会一直进行陷入死循环导致系统崩溃</p>
+    <>3.在循环内,初始值 '条件判断 和 改变初始值 都能控制循环的次数</>
+    <p>4.在循环内,循环控制变量是一组有 规律的 数字</p>
+    <hr />
+    <>
+        <script>
+          // 定义初始变量
+          var k=0
+          while(k<6){
+            // ()结束条件
+            // 一段重复代码,直到到达结束条件
+            // document.write('走一个石板')
+            document.write(k)
+            // 改变初始值,变量自增
+            k++
+          } 
+            // 后续代码
+            document.write('继续走后面的路')
+        </script>
+        <hr>
+        <script>
+          // 10以内的阶乘算法
+          var n=10,k=1
+          while(n>=1){
+            k*=n
+            // k=k*n
+            n--
+            document.write(n)
+          }
+          document.write(k) 
+          // 浏览器页面显示每次参与计算的k的值
+
+        </script>
+    </>
+  </body>
+</html>

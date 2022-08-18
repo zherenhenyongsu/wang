@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js书写位置</title>
+    <!-- 行内式  内嵌式  外链式 -->
+  </head>
+  <body>
+    <!-- 行内式 ,不利于代码维护,导致html文件臃肿,强烈不推荐-->
+    <a href="javascript:alert('hello world') ">点击</a>
+    <!-- a标签 书写在href属性上 -->
+    <div onclick="alert('hello world') ">点击</div>
+    <!-- 非a标签,书写在行为属性上,例,onclick -->
+    <!--                                 -->
+    <!--内嵌式 ,不太推荐-->
+    <script>
+      console.log("hello world");
+    </script>
+    <!-- 外链式,最推荐 -->
+    <script src="./186js外链.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>案例2</title>
+  </head>
+  <body>
+    <!-- <pre>  :   ;   </pre> -->
+    <script>
+      var a = 5,
+        b = 70;
+      // 两个数的最大 公约数,一定小于等于两个数中小的那个数
+      if (a < b) {
+        c = a;
+      } else {
+        c = b;
+      }
+      // k值从大到小参与循环,第一个满足条件的值,就是最大公约数
+      for (k = c; k >= 1; k--) {
+        if (a % k === 0 && b % k === 0) {
+          document.write(k);
+          //document.write(k);第一次触发时,跳出循环
+          break;
+        }
+      }
+    </script>
+    <hr />
+  </body>
+</html>

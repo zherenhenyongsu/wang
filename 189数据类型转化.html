@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据类型转换</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <pre>
+                数据类型转换
+
+一. 转数值:
+    1.方式一: Number();
+      Number()只要变量king包含非数字字符,转化结果就是NaN 
+
+      <script>
+      var king = "100";
+      // 转化结果合法数字,值100;
+      // var king = "ABC";
+      // 转化结果非合法数字, 值NaN;
+      // var king='100abc'
+      // var king = "ABC100";
+       var king='100.25'
+      var king1 = Number(king);
+      //使用Number()转换为数据类型
+      // alert(king1);
+      //浏览器警告弹窗显示king1的值
+      document.write(typeof king);
+      document.write(king1);
+      document.write(typeof king1);
+      // 浏览器页面显示king1数据类型
+      // console.log(king1);
+      </script>
+    
+    2.方式二: parseInt();
+    <!-- parse解析 int整型,整数 -->
+      parseInt()只有变量king的第一个字符是非数字字符,转化结果才是NaN
+                否则,逐个读取字符,直到遇到非数字字符停止,
+                读取到的数字字符为输出结果
+
+     <script>
+                  var king='100'
+                  var king='abc'
+                  var king='100abc'
+                  var king='abc100'
+                   var king='100.25'
+                  document.write(typeof king)
+                  var king1=parseInt(king)
+                  document.write(king1)
+                  document.write(typeof king1)
+                  </script>
+    3.方法三: parseFloat(king)
+    <!-- flout浮点型,浮点数 -->
+      parseFloat(),可以读取到小数,其他与parseInt()相同
+     <script>
+                  var king='100'
+                  var king='abc'
+                  var king='100abc'
+                  var king='abc100'
+                  var king='100.25'
+                  document.write(typeof king)
+                  // var king1=parseInt(king)
+                  var king1=parseFloat(king)
+                  document.write(king1)
+                  document.write(typeof king1)
+                  </script>           
+                  
+    <p style="color: red;" >注:parseInt(),parseFloat()和Number()转换结果的,typeof测试结果,默认为number</p>
+  二.转字符串 
+    1.String()
+    2. .toString()用法  
+       var king1=king.toString()
+
+    <script> 
+      var king=true
+      var king=100
+      document.write(typeof king)
+      // var king1=String(king)
+      var king1=king.toString()
+      document.write(king1)
+      document.write(typeof king1)
+    </script>
+  三.转布尔 Boolean()
+    <script>
+    var king=100
+    var king='abc100'
+    var king=0
+    document.write(typeof king)
+    var king1=Boolean(king)
+    document.write(king1)
+    document.write(typeof king1)
+    </script>
+    false:js中只有 0  NaN "" undefined  null 五种内容会被转化为false,
+          其他所有内容都会转化成true
+    </pre>
+  </body>
+</html>

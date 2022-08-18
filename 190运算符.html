@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>运算符</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+
+    <pre>
+    一.算数符分类
+        +  进行加法运算
+            1.当符号两边都是数字或者布尔的时候,会进行数学运算
+            // true+true=2  false+false=0  false+
+            2.只要任何一边是字符串的时候,就会进行字符串拼接
+        -  减法运算 ]
+        *  乘法     ]
+        /  除法     ]
+        %  取余     ]!!!
+                []四种只能进行数学运算
+
+        <script>
+            // var k1=10,k2=20
+            // var k1='10'
+            var k1=false
+            // var k1=true
+            var k2=false
+            var k3=k1+k2
+            document.write(k3)
+            // var k1=5,k2=2
+            // var k4=k2%k1
+            document.write(k4)
+        </script>
+
+    二.赋值运算符
+        =  赋值
+        <script> 
+            var k1=5
+            k1+=10
+            // 等同于k1=k1+10
+            // document.write(k1)
+            k1-=10
+            // document.write(k1)
+            k1*=10
+            // document.write(k1)
+            k1/=2
+            // k1%=2
+            document.write(k1)
+        </script>
+
+    三.比较运算符
+       <p>!!!比较运算符得到的结果一定是一个布尔值!!!</p>
+        1.>  <  >=  >=  与数学中一致
+        <script>
+            document.write(10<1)
+        </script>
+        2.==   不完全等于
+        3.===  完全等于
+        4.!=   完全不等于
+        5.!==  不完全不等于  
+        <script>
+            document.write(10=='10')
+            document.write(10==='10')
+            document.write(10!='10')
+            document.write(10!=='10')
+            document.write(10!=='a')
+        </script>
+
+    四.逻辑运算符
+       1.&&  与运算
+        <script>
+           document.write(true&&true)
+           document.write(true&&false)
+           document.write(false&&true)
+           document.write(false&&false)
+           </script>
+       2.||  或运算
+        <script>
+           document.write(true||true)
+           document.write(true||false)
+           document.write(false||true)
+           document.write(false||false)
+       
+         </script>
+       3.!   非运算
+        <script>
+               document.write(!true)
+               document.write(!false)
+           </script>
+    
+    五.自增自减运算符
+    1.++
+    2.--
+    前置
+    <script>
+        var k=5
+        document.write(1+ ++k)
+        // 7   6
+        document.write(1+ k++)
+        // 7   7
+        document.write(1+ --k)
+        //7  6
+        document.write(1+ k--)
+        //7  5 
+        document.write(k)
+
+    </script>
+    后置
+    <script>
+        var q=5
+        document.write(1- --q)
+        //-3  4
+        document.write(1- q--)
+        //-3  3
+        document.write(1- ++q)
+        //-3  4
+        document.write(1- q++)
+        //-3  5
+        document.write(q)
+
+    </script>
+
+    </pre>
+  </body>
+</html>

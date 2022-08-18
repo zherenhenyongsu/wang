@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>案例2</title>
+  </head>
+  <body>
+    <script>
+      var a = 59,
+        b = 367;
+      //   c = a * b;
+      if (a > b) {
+        // !!!这里d=a和a=b是不一样的
+        // a=b表示给a重新赋值为b,b没有被赋值前只是一个字符
+        d = a;
+      } else {
+        d = b;
+      }
+      //   document.write(a);
+      //   document.write(b);
+      //   document.write(d);
+      // 此代码ab数值过大时,计算量过大
+      for (k = d; k <= a * b; k++) {
+        if (k % a === 0 && k % b === 0) {
+          document.write(k);
+          break;
+        }
+      }
+    </script>
+    <hr />
+    <script>
+      var a = 3,
+        b = 9;
+      // 判断ab的大小较大的值赋值给从,较小的值赋值给d
+      if (a > b) {
+        (c = a), (d = b);
+      } else {
+        (c = b), (d = a);
+      }
+      //   document.write(a, b, c, d);
+      //  最小公倍数k1,可知  c<= k1<=a*b ,
+      //   且k1能分别被a和b整除
+      // 所以以较大值c作为初始值,和步长,以a*b作为结束条件,计算量最少
+      //
+      for (k = c; k <= a * b; k += c) {
+        if (k % d === 0) {
+          // 所以以c作为步长,且能被d整除的第一个数值就是最小公倍数
+          document.write(k);
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

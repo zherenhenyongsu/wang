@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分支语句switch</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <pre>
+      分支语句switch
+      <p>1.找到和已知条件 完全匹配 的选项执行</p>
+      <p>2.代码执行完毕需要写break,不然会  向下穿透</p>
+      <p>3.可以书写一个default,会在所有选项 都不匹配时 执行</p>
+      <p>4.当发生穿透效果时,会从 第一个满足条件 的选项开始向下穿透 </p>
+      <script>
+        var k=40
+        switch(k){
+          // 从符合()的地方开始执行{}中的后续代码,
+          case 45 :
+            document.write('买一双45码鞋子')
+            break
+            //上条代码被执行时,break在此打断,跳过{}中后续代码,执行{}外代码
+            case 40 :
+              document.write('买一双40码鞋子')
+              break
+              case 50 :
+              document.write('买一双50码鞋子')
+                break
+                default:document.write('再去别家看看')
+                // 没有符合条件的选项时执行
+              }
+              </script>
+    
+    </pre>
+  </body>
+</html>

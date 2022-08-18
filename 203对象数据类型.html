@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>对象数据类型</title>
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <!-- 对象(object)  定义  键值对的集合,多个键值对中间用逗号隔开
+                       操作  对对向内 键值对的操作<
+                             增  向对象内添加一个键值对
+                             删
+                             改
+                             查
+                        
+                    
+                    -->
+    <script>
+      // 创建对象
+      //                |值(value)
+      //   var obj = { hair: "没招", eye: "没招" };
+      //       |键(key)
+      //             {键值对,多个时中间用逗号间隔 }
+      var obj = {
+        // 对象内的值可以是任何数据类型
+        a: 100,
+        b: true,
+        c: "hello world",
+      };
+      console.log(obj);
+    </script>
+    <script>
+      var obj2 = {};
+
+      console.log(obj2);
+      //   增加一个 键值对
+      // 语法一
+      obj2.name = "小灰狼";
+      obj2.gender = "男";
+      //   语法二
+      obj2["age"] = 18;
+      //   []注意 内时字符串格式
+      console.log(obj2);
+      //  删除一个 键值对
+      //  语法一
+      //   delete obj2.name;
+      //  语法二
+      //   delete obj2["age"];
+      //   []注意 内时字符串格式
+
+      // 更改一个 键值对
+      // 语法一
+      obj2.name = "公羊无衣";
+      //   语法二
+      obj2["age"] = 30;
+      //   []注意 内时字符串格式
+      console.log(obj2);
+      //   查看一个  键值对
+      console.log(obj2.name);
+      console.log(obj2["age"]);
+      //   []注意 内时字符串格式
+    </script>
+  </body>
+</html>

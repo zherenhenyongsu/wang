@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>引入数据类型-函数</title>
+  </head>
+  <body>
+    <!-- <pre>  :   ;   </pre> -->
+    <pre>
+      1.js中的函数概念与数学中的函数不完全相同 
+      2.js中的函数是一段  [有特定功能或处理过程 ] 的代码,被封装到一个盒子里,可调用执行
+      3.定义函数   调用函数
+      4.形参,定义在函数内部的变量
+      5.实参,在函数调用时给函数的赋值
+    </pre>
+    <script>
+      // 定义一个函数
+      function king(a, b) {
+        // 定义函数king(形参){函数代码}
+        document.write("我是一个函数");
+        document.write(a + b);
+      }
+      // 调用函数
+      king(10, 20);
+      // king(实参)按顺序对用形参的a和b,在函数内给a,b分别赋值
+      king(5, 7);
+      //函数调用时,每次给形参的赋值,都当此调用有效,每次调用都重新赋值
+    </script>
+    <script>
+      function kin(n) {
+        var k = 1;
+        // n = 10;
+        while (n >= 1) {
+          k *= n;
+          n--;
+        }
+        document.write(k);
+        return k;
+        // 函数返回 k的值
+      }
+      var r1 = kin(4),
+        r2 = kin(5);
+      document.write(r1);
+      console.log(r2);
+    </script>
+  </body>
+</html>

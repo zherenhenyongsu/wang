@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>案例-平年闰年</title>
+    <link rel="stylesheet" href="pre.css" />
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <pre>
+        变量 n年份  k1常量1 k2常量2
+        闰年n%4===0&&n%100!=0 
+            n%400===0
+         <p>!!!如何对非数字类型不合规输入做判断并提示</p>
+        <script>
+            var n=2100
+            if(n<=0||n%1!==0){document.write('请输入正确年份')}
+            else if(n%4===0&&n%100!==0||n%400===0){document.write("公元" + n +'年是闰年')}
+            // else if(n%4===0&&n%100!==0){document.write(n+'是闰年')}
+            // else if(n%400===0){document.write(n+'年是闰年')}
+            else{document.write('公元',n,'年是平年')}        
+        </script>
+    </pre>
+  </body>
+</html>

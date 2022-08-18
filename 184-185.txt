@@ -1,0 +1,4 @@
+BOM   对象浏览器  例, alert("hello world");
+DOM   对象文档流  例, document.write("<br/>");
+ECMASCRIPT   书写语法与规则,对BOM DOM 进行调控
+JS 书写语法与规则
