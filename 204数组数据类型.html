@@ -6,5 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>数组数据类型</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 数组(array):一个有序的 数据 组合 -->
+    <!-- 数组的操作:<长度的操作<获取长度:arr.length 
+                              设置长度:arr.length = 2;长度小于原数组长度时从尾部删除数据
+                    数据的操作<获取数据:arr[索引]      
+                              设置数据:arr[索引] = 1234 -->
+    <!--数组遍历:从头到尾依次访问数组中每一个数据的时候叫做遍历 -->
+
+    <pre>  :   ;   </pre>
+    <script>
+      // 一个空数组,多个数据集用逗号隔开,数组中可以从存储任何数据类型
+      //   和对象的区别是,对象的每个数据都有自己的键名,但数组不需要
+      //   数组里的每一个数据都有自己的序号,序号从左到右,从'0'开始,依次递增
+      var arr = [100, true, "hello world"];
+      //索引(下标) 0     1         2
+      //   索引,从'0'开始,依次 +1
+      console.log(arr);
+      // 获取长度arr.length
+      console.log(arr.length);
+      // 设置长度
+      arr.length = 4;
+      console.log(arr);
+      // 获取数据arr[索引]
+      console.log(arr[1]);
+      // 设置数据
+      arr[3] = 1234;
+      console.log(arr);
+    </script>
+    <script>
+      //数组的遍历
+      var arr = [100, 200, 300, 400, 500];
+      console.log(arr);
+      for (i = 0; i < arr.length; i++) {
+        console.log(i);
+        console.log(arr[i]);
+      }
+    </script>
+  </body>
 </html>

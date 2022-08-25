@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>冒泡排序</title>
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <script>
+      var arr = [9, 3, 6, 2, 4, 1, 8, 5, 7];
+      for (k = 0; k < arr.length; k++) {
+        for (i = 0; i < arr.length - 1 - k; i++) {
+          // arr.length=9,实际只需要比较8次
+          //   外侧循环每执行以1次,需要参与比较的数据减少1个
+          var temp = arr[i];
+          // console.log(temp);
+          // console.log(arr[i]);
+          if (arr[i] > arr[i + 1]) {
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+          }
+        }
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

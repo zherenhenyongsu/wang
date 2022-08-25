@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>选择排序</title>
+  </head>
+  <body>
+    <pre>  :   ;   </pre>
+    <script>
+      var arr = [9, 3, 6, 2, 4, 1, 8, 5, 7];
+      // 对应索引 0  1  2  3  4  5  6  7  8
+      //   假设最小的数字是索引:0位置
+      for (j = 0; j < arr.length - 1; j++) {
+        // arr.length=9,循环次数8次
+        var minIndex = j;
+        for (i = j + 1; i < arr.length; i++) {
+          // 判断是不是比假设索引位置的数字小
+          if (arr[i] < arr[minIndex]) {
+            // 如果条件为 true,那么替换 minIndex
+            minIndex = i;
+            //   i真实最小数字的索引位置
+          }
+        }
+        console.log(minIndex);
+
+        //   将真实最小数字调换到索引0位置
+        var temp = arr[j];
+        arr[j] = arr[minIndex];
+        arr[minIndex] = temp;
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

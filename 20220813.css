@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* min-height: 100vh; */
+  /* 最小高度,100%视口高度,与height: 100vh相比,溢出内容仍有背景  */
+  background-color: #876445;
+}
+.box {
+  position: relative;
+  width: 300px;
+}
+.box .inputbox,
+.box .chenckputbox {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+.box .chenckputbox {
+  margin-top: 10px;
+}
+.box .inputbox input,
+.box .chenckputbox input {
+  position: relative;
+  outline: none;
+  /* 选中后边框  无 */
+  border: none;
+  /* 边框 无 */
+  padding: 10px 5px;
+}
+#togglebth {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+  /* 光标样式 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册密码验证框（正则判断）</title>
+    <link rel="stylesheet" href="./20220813.css" />
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/c/font_3601184_yj1z30fquvr.css"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <div class="inputbox">
+        <input
+          type="password"
+          id="pswrd"
+          placeholder="密码"
+          onkeyup="checkPassword(this.value)"
+        />
+      </div>
+      <span id="togglebth" class="iconfont icon-yanjing_yincang_o"></span>
+      <div class="chenckputbox">
+        <input
+          type="password"
+          id="pswrd"
+          placeholder="确认密码"
+          onkeyup="recheckPassword(this.value)"
+        />
+        <span id="togglebth" class="iconfont icon-yanjing_yincang_o"></span>
+      </div>
+      <div class="validation">
+        <ul>
+          <li id="lower">至少一个小写字母</li>
+          <li id="upper">至少一个大写字母</li>
+          <li id="number">至少一个数字</li>
+          <li id="special">至少一个特殊字符</li>
+          <li id="length">至少8个字符</li>
+          <li id="recheck">两次密码不一致</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
